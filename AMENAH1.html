@@ -3,91 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Boycott</title>
-
-<style>
-body {
-  background-color: #ffffff;
-  text-align: center;
-  margin: 0;
-}
-
-nav {
-  display: flex;
-  justify-content:center;
-  background:#ffffff;
-  padding: 20px;
-
-}
-
-button {
-  background: #ffffff;
-  color:#888;
-  padding: 10px;
-  cursor: pointer;
-  margin-left:10px;
-  font-family: 'Nunito', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.2s;
-    border: 1.5px solid var(#2e2e2e);
-    
-}
-button:hover{ border-color:#2ecc71; color:#2ecc71; }
-button.active { border-color:#2ecc71; background: #2ecc71; color: black; }
-
-.page {
-  margin-top: 20px;
-}
-
-.hidden {
-  display: none;
-}
-
-#feedbackBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-
-.top-btn {
-  position: fixed;   
-  top: 15px;
-  right: 15px;
-
-  background: black;
-  color: #2ecc71;
-  border: 1px solid #2ecc71;
-
-  padding: 10px;
-  border-radius: 30px;
-  font-size: 0.85rem;
-
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.top-btn:hover {
-  background: #e74c3c;
-  color: black;
-  border: 1px solid black;
-}
-
-/* Logo styling */
-.logo img {
-  position: fixed;  /* stays in the corner even when scrolling */
-  top: 10px;        /* distance from top edge */
-  left: 10px;       /* distance from left edge */
-  height: 50px;     /* adjust size */
-  width: auto;      /* keep aspect ratio */
-  z-index: 1000;    /* make sure it’s on top of other elements */
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
@@ -96,16 +14,32 @@ button.active { border-color:#2ecc71; background: #2ecc71; color: black; }
   <button onclick="showPage('alt')">Alternatives</button>
   <button onclick="showPage('about')">About Us</button>
 </nav>
-<div class="logo">
+
+  <div class="logo">
     <img src="Capture d'écran 2026-03-30 223622.png" alt="Site Logo">
   </div>
 
 <!-- HOME -->
 <section id="home" class="page">
-  <h2>Free Palestine</h2>
-  <video controls width="300">
-    <source src="" type="video/mp4">
-  </video>
+<h1>Amenah</h1>
+<h3>Your Purchase their voice</h3>
+
+<div class="paragraph">
+<p>Somewhere between your wallet and the world, there's a conversation happening.</p>
+  <p>This site helps you hear it.</p>
+  <p>We trace the stories behind everyday products — the hidden hands,</p>
+  <p>the silenced voices, the choices that ripple further than we think.</p>
+  <p>And alongside every hard truth,</p>
+  <p>we offer a path: alternatives built on fairness, dignity, and care.</p>
+  <p>Spend like it matters. Because it does."</p>
+</div>
+
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+        <source src="Enregistrement de l'écran 2026-03-31 223432.mp4" type="video/mp4">
+    </video>
+  </div>
+  
 </section>
 
 <button class="top-btn" onclick="showPage('add')">Add product</button>
@@ -115,19 +49,19 @@ button.active { border-color:#2ecc71; background: #2ecc71; color: black; }
 
 <!-- BOYCOTT -->
 <section id="boycott" class="page hidden">
-  <h2>Produits à Boycotter</h2>
+  
   <!-- produit a boycotter  carte-->
 </section>
 
 <!-- ALTERNATIVES -->
 <section id="alt" class="page hidden">
-  <h2>Alternatives</h2>
+  
   <!-- alternative carte-->
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="page hidden">
-  <h2>Pourquoi boycotter ?</h2>
+  <!--pourquoi boycotter-->
   <p>
     
   </p>
@@ -150,4 +84,3 @@ function showPage(page) {
 
 </body>
 </html>
-```
