@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Boycott</title>
+<title>Amenah</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -36,21 +36,1286 @@
 
   <div class="video-container">
     <video autoplay muted loop playsinline>
-        <source src="Enregistrement de l'écran 2026-03-31 223432.mp4" type="video/mp4">
+        <source src="boyct.mp4" type="video/mp4">
     </video>
   </div>
   
 </section>
 
-<button class="top-btn" onclick="showPage('add')">Add product</button>
+<button class="top-btn" onclick="showPage('add')">Take Action ✋</button>
 <section id="add" class="page hidden">
   <h2>add new product</h2>
 </section>
 
 <!-- BOYCOTT -->
 <section id="boycott" class="page hidden">
+
+<div class="search-bar">
+    <span class="icon">🔍</span>
+    <input type="search" id="searchInput" placeholder="Search a product..." oninput="applyFilters()">
+</div>
+
+<!--filter-->
+
+<section class="filter">
+  <input type="radio" name="category" id="cat-all" checked>
+  <label for="cat-all">All</label>
+
+<input type="radio" name="category" id="cat-food">
+  <label for="cat-food">Food</label>
+
+<input type="radio" name="category" id="cat-tech">
+  <label for="cat-tech">Tech</label>
+
+<input type="radio" name="category" id="cat-clothing">
+  <label for="cat-clothing">Clothing</label>
+
+<input type="radio" name="category" id="cat-finance">
+  <label for="cat-finance">Finance</label>
+
+<input type="radio" name="category" id="cat-media">
+  <label for="cat-media">Media</label>
+
+<input type="radio" name="category" id="cat-cleaning">
+  <label for="cat-cleaning">Cosmetics</label>
+</section>
+
+
+<!--CARDS-->
+
+
+<div  class="cards">
+ <div class="cards-container" id="cardsContainer">
+  <!--produit 1-->
+    <div class="card" data-cat="food" data-name="cocacola">
+      <img src="img/Coca-Cola_Logo.webp" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Coca Cola</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">It runs factories in illegal Israeli settlements and uses grapes from stolen Palestinian/Syrian land—helping war crimes</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppcoca" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppcoca" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Coca Cola</div>
+         <div class="description">It runs factories in illegal Israeli settlements and uses grapes from stolen Palestinian/Syrian land—helping war crimes. According to WhoProfits research, Coca-Cola Israel's exclusive franchise operates a distribution center in the illegal Atarot Settlement
+         Industrial Zone, while its Tabor Winery sources grapes from occupied West Bank and Syrian Golan vineyards. The ICJ ruled in July 2024 that Israel's 
+        occupation of Gaza, the West Bank (including East Jerusalem), and all settlements are illegal war crimes under international law, making Coke directly 
+        complicit through infrastructure support. Corporations enabling this unlawful occupation, apartheid, and related crimes—via military, logistical, financial,
+          or other aid—must be held accountable, with executives facing potential criminal liability.</div>
+      </div>
+    </div>
+
+
+
+  <!--produit 2-->
+    <div class="card" data-cat="food" data-name="cheetos">
+      <img src="img/cheetos.jfif" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Cheetos</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Cheetos are being boycotted primarily due to parent company PepsiCo's business ties to Israel</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppcheetos" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppcheetos" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Cheetos</div>
+         <div class="description">Cheetos are being boycotted primarily due to parent company PepsiCo's business ties to Israel, which critics cite as complicity in the occupation of Palestinian territories. The brand is frequently included on boycott lists (such as BDS) along with other PepsiCo brands, due to investments in companies like SodaStream and Sabra</div>
+      </div>
+    </div>
+
+    <!--produit 3-->
+    <div class="card" data-cat="clothing" data-name="adidas">
+      <img src="img/adidas.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Adidas</p>
+        <p class="text-cat">clothing</p>
+        <p class="text-body">Adidas has faced calls for boycotts primarily due to its commercial ties with Israel,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppadidas" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppadidas" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Adidas</div>
+         <div class="description">Adidas has faced calls for boycotts primarily due to its commercial ties with Israel, accusations of complicity in the Israeli occupation of Palestinian territories, and specific, controversial marketing decisions.</div>
+      </div>
+    </div>
+
+    <!--produit 4-->
+    <div class="card" data-cat="tech" data-name="apple">
+      <img src="img/appla.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Apple</p>
+        <p class="text-cat">Tech</p>
+        <p class="text-body">Acquired several Israeli companies and conducts limited R&D activities in Israel focusing on semiconductor technologies.</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppapple" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppapple" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Apple</div>
+         <div class="description">Acquired several Israeli companies and conducts limited R&D activities in Israel focusing on semiconductor technologies. Apple matches worker donations to IDF and illegal settlements, employees allege although not confirmed.
+         </div>
+     </div>
+    </div>
+
+    <!--produit 5-->
+    <div class="card" data-cat="media" data-name="bbc">
+      <img src="img/bbc.jfif" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">BBC</p>
+        <p class="text-cat">Media</p>
+        <p class="text-body">The BBC is being boycotted by some groups and criticized by its own staff over allegations of pro-Israel bias in its coverage of the conflict in Gaza.</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppbbc" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppbbc" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">BBC</div>
+         <div class="description">The BBC is being boycotted by some groups and criticized by its own staff over allegations of pro-Israel bias in its coverage of the conflict in Gaza. Critics argue the network dehumanizes Palestinians through inequitable language, fails to report adequately on the humanitarian crisis, and gives disproportionate airtime to Israeli narratives.
+
+         </div>
+      </div>
+    </div>
+
+    <!--produit 6-->
+    <div class="card" data-cat="cleaning" data-name="bioderma">
+      <img src="img/bioderma.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Bioderma</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Bioderma is included in boycott lists because its parent company, Galderma, was formerly owned by Nestle and L'Oréal,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppbiod" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppbiod" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Bioderma</div>
+         <div class="description">Bioderma is included in boycott lists because its parent company, Galderma, was formerly owned by Nestle and L'Oréal, and is now owned by an investment consortium (EQT and GIC) that has invested in Israeli technology. Such investments are seen by boycotters as helping strengthen the Israeli economy and occupation.
+
+         </div>
+      </div>
+    </div>
+
+
+    <!--produit 7-->
+    <div class="card" data-cat="finance" data-name="blackrock">
+      <img src="img/blackrock.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">blackrock</p>
+        <p class="text-cat">finance</p>
+        <p class="text-body">BlackRock is boycotted by pro-Palestine activists for being a major investor in weapons manufacturers—including Lockheed Martin</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppbr" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppbr" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">blackrock</div>
+         <div class="description">BlackRock is boycotted by pro-Palestine activists for being a major investor in weapons manufacturers—including Lockheed Martin, RTX, Northrop Grumman, Boeing, and General Dynamics—that supply the Israeli military. Activists argue these investments make the firm complicit in alleged war crimes and human rights violations against Palestinians.
+         </div>
+      </div>
+    </div>
+
+    <!--produit 8-->
+    <div class="card" data-cat="media" data-name="cnn">
+      <img src="img/cnn.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">CNN</p>
+        <p class="text-cat">media</p>
+        <p class="text-body">CNN is being boycotted by supporters of Palestine due to accusations of severe pro-Israel bias in its coverage of the Gaza conflict,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppcnn" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppcnn" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">CNN</div>
+         <div class="description">CNN is being boycotted by supporters of Palestine due to accusations of severe pro-Israel bias in its coverage of the Gaza conflict, including the suppression of Palestinian perspectives, airbrushing of Israeli actions, and spreading misinformation. Critics allege the network acts as a "surrogate censor" for Israel.</div>
+      </div>
+    </div>
+
+
+    <!--produit 9-->
+    <div class="card" data-cat="cleaning" data-name="colgate">
+      <img src="img/colgate.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Colgate</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Colgate is included in consumer boycott campaigns due to its business activities in Israel,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppcolg" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppcolg" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Colgate</div>
+         <div class="description">Colgate is included in consumer boycott campaigns due to its business activities in Israel, with campaigners alleging the company is complicit in supporting Israel's actions against Palestinians. It is often listed by grassroots movements alongside other multinational brands for maintaining operations, investments, or partnerships linked to the Israeli market.</div>
+      </div>
+    </div>
+
+    <!--produit 10-->
+    <div class="card" data-cat="tech" data-name="dell">
+      <img src="img/dell.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">DELL</p>
+        <p class="text-cat">etch</p>
+        <p class="text-body">Dell is boycotted by pro-Palestinian activists, including the Boycott, Divestment, Sanctions (BDS) movement, due to its alleged complicity in Israel's</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppdell" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppdell" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">DELL</div>
+         <div class="description">Dell is boycotted by pro-Palestinian activists, including the Boycott, Divestment, Sanctions (BDS) movement, due to its alleged complicity in Israel's occupation and military actions in Gaza. Activists cite Dell’s supply of IT infrastructure to the Israeli military, research and development in illegal settlements, and financial backing from its leadership as reasons for targeting the company.
+         </div>
+      </div>
+    </div>
+
+
+    <!--produit 11-->
+    <div class="card" data-cat="food" data-name="danone">
+      <img src="img/danone.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Danone</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">CDanone is targeted by boycott campaigns over alleged, though officially denied, ties to Israel and its investment in Israeli firms.</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppdano" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppdano" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Danone</div>
+         <div class="description">Danone is targeted by boycott campaigns over alleged, though officially denied, ties to Israel and its investment in Israeli firms. The pressure, particularly strong in Indonesia and some Middle East regions, often stems from concerns over investment in Israeli-based food companies, prompting calls to support Palestinian independence.
+         </div>
+      </div>
+    </div>
+
+
+    <!--produit 12-->
+    <div class="card" data-cat="media" data-name="disney">
+      <img src="img/disney.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Disney</p>
+        <p class="text-cat">media</p>
+        <p class="text-body">Disney is facing boycotts from pro-Palestinian supporters primarily due to the company's financial and public support for Israel </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppdisn" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppdisn" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Disney</div>
+         <div class="description">Disney is facing boycotts from pro-Palestinian supporters primarily due to the company's financial and public support for Israel during the ongoing Gaza conflict, as well as perceived pro-Israel bias in its media content.</div>
+      </div>
+    </div>
+
+
+    <!--produit 13-->
+    <div class="card" data-cat="food" data-name="doritos">
+      <img src="img/doritos.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Doritos</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Doritos is boycotted in connection with Palestine primarily because it is owned by PepsiCo,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppdori" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppdori" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Danone</div>
+         <div class="description">Doritos is boycotted in connection with Palestine primarily because it is owned by PepsiCo, which is targeted for its investments in Israel and its partnership with the Israeli-based Strauss Group. The boycott aims to pressure companies seen as supporting or profiting from the Israeli occupation. </div>
+      </div>
+    </div>
+
+    <!--produit 14-->
+    <div class="card" data-cat="cleaning" data-name="dove">
+      <img src="img/dove.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">Dove</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Dove is boycotted because it is owned by Unilever, a conglomerate accused of being complicit in Israeli policies</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppdove" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppdove" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">Dove</div>
+         <div class="description">Dove is boycotted because it is owned by Unilever, a conglomerate accused of being complicit in Israeli policies, specifically by selling Ben & Jerry's Israeli distribution rights in 2022 to bypass the ice cream brand’s decision to halt sales in occupied Palestinian territories. 
+         </div>
+      </div>
+    </div>
+
+    <!--produit 15-->
+    <div class="card" data-cat="food" data-name="fanta">
+      <img src="img/fanta.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">fanta</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Fanta is boycotted because it is owned by The Coca-Cola Company, which is targeted for operating a,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppfan" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppfan" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">fanta</div>
+         <div class="description">Fanta is boycotted because it is owned by The Coca-Cola Company, which is targeted for operating a, manufacturing plant in the Atarot industrial zone, an illegal Israeli settlement in occupied East Jerusalem. This involvement in occupied Palestinian territory has led to its inclusion in campaigns boycotting companies supporting Israeli settlement infrastructure.
+         </div>
+      </div>
+    </div>
+
+    <!--produit 16-->
+    <div class="card" data-cat="cleaning" data-name="garnier">
+      <img src="img/garnier.jfif" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">garnier</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">FGarnier is subject to boycotts, particularly linked to the BDS movement (Boycott, Divestment, Sanctions), primarily due to a 2014</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppgr" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppgr" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">garnier</div>
+         <div class="description">Garnier is subject to boycotts, particularly linked to the BDS movement (Boycott, Divestment, Sanctions), primarily due to a 2014 controversy where Garnier Israel donated toiletries to female Israeli Defense Forces (IDF) soldiers during the conflict in Gaza. Critics accused the company of supporting the military action
+           </div>
+      </div>
+    </div>
+
+    <!--produit 17-->
+    <div class="card" data-cat="cleaning" data-name="gillette">
+      <img src="img/gilette.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">gillette</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Gillette is boycotted because its parent company, Procter & Gamble (P&G), has significant investments in Israel, including an R&D center in Tel Aviv and partn</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppgil" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppgil" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">gillette</div>
+         <div class="description">Gillette is boycotted because its parent company, Procter & Gamble (P&G), has significant investments in Israel, including an R&D center in Tel Aviv and partnerships with companies operating in occupied Palestinian territories. These ties lead to allegations of supporting the Israeli economy and occupation.
+         </div>
+      </div>
+    </div>
+
+    <!--produit 18-->
+    <div class="card" data-cat="media" data-name="google">
+      <img src="img/google.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">google</p>
+        <p class="text-cat">media</p>
+        <p class="text-body">Google is facing calls for a boycott and protests from activist groups, some employees, and human rights advocates, primaril</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppgo" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppgo" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">google</div>
+         <div class="description">Google is facing calls for a boycott and protests from activist groups, some employees, and human rights advocates, primarily due to its business dealings with the Israeli government and military, particularly during the conflict in Gaza. The core reasons for this campaign involve accusations of enabling surveillance, supporting apartheid, and retaliation against staff opposing these actions.
+
+         </div>
+      </div>
+    </div>
+
+    <!--produit 19-->
+    <div class="card" data-cat="cleaning" data-name="h&s">
+      <img src="img/headshoulders.jpg" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">head & shoulders</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Head & Shoulders is boycotted by supporters of Palestine primarily because it is owned by Procter & Gamble (P&G)</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pphs" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pphs" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">head & shoulders</div>
+         <div class="description">Head & Shoulders is boycotted by supporters of Palestine primarily because it is owned by Procter & Gamble (P&G), a multinational consumer goods corporation targeted for its ties to Israel.</div>
+      </div>
+    </div>
+
+    <!--produit 20-->
+    <div class="card" data-cat="tech" data-name="hp">
+      <img src="img/hp.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">hp</p>
+        <p class="text-cat">tech</p>
+        <p class="text-body">HP is boycotted due to its extensive technological support for the Israeli military and government, which, according to the BDS Movement, </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pphp" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pphp" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">hp</div>
+         <div class="description">HP is boycotted due to its extensive technological support for the Israeli military and government, which, according to the BDS Movement, facilitates the occupation of Palestinian territories and the oppression of Palestinians. Key issues include providing servers for Israeli prisons and biometric identification systems used at military checkpoints.</div>
+      </div>
+    </div>
+
+    <!--produit 21-->
+    <div class="card" data-cat="tech" data-name="ibm">
+      <img src="img/ibm.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">ibm</p>
+        <p class="text-cat">tech</p>
+        <p class="text-body">IBM is targeted by the Boycott, Divestment, Sanctions (BDS) movement and human rights activists for its technological support of the Israeli military</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppibm" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppibm" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">ibm</div>
+         <div class="description">IBM is targeted by the Boycott, Divestment, Sanctions (BDS) movement and human rights activists for its technological support of the Israeli military and government, particularly concerning projects linked to surveillance and the occupation of Palestinian territories. Activists cite IBM's management of databases for the Israeli Population Authority, which assists in enforcing the occupation.
+         </div>
+
+      </div>
+    </div>
+
+    
+    <!--produit 22-->
+    <div class="card" data-cat="tech" data-name="intel">
+      <img src="img/intel.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">intel</p>
+        <p class="text-cat">tech</p>
+        <p class="text-body">Intel is boycotted by pro-Palestinian groups, including the BDS movement, due to its extensive investments in Israel, </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppint" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppint" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">intel</div>
+         <div class="description">Intel is boycotted by pro-Palestinian groups, including the BDS movement, due to its extensive investments in Israel, specifically a $25 billion factory expansion in Kiryat Gat, which is located on land associated with ethnically cleansed Palestinian villages. Activists argue that this investment, combined with long-standing R&D facilities, makes Intel complicit in Israel’s occupation, surveillance, and military actions.</div>
+
+      </div>
+    </div>
+
+
+    
+    <!--produit 23-->
+    <div class="card" data-cat="finance" data-name="jpmorgan">
+      <img src="img/jpmorgan.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">jp morgan</p>
+        <p class="text-cat">finance</p>
+        <p class="text-body">JPMorgan Chase is targeted by pro-Palestinian boycotts and protests primarily due to its financial ties to Israel,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppjp" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppjp" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">jp morgan</div>
+         <div class="description">JPMorgan Chase is targeted by pro-Palestinian boycotts and protests primarily due to its financial ties to Israel, including investments in Israeli weapons manufacturer Elbit Systems and underwriting "war bonds" for the state. Activists accuse the firm of profiting from the ongoing conflict in Gaza.</div>
+
+      </div>
+    </div>
+
+    <!--produit 24-->
+    <div class="card" data-cat="food" data-name="lays">
+      <img src="img/lays.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">lays</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">JLay's is boycotted due to its parent company, PepsiCo, having significant investments and operations in Israel,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pplays" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pplays" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">lays</div>
+         <div class="description">Lay's is boycotted due to its parent company, PepsiCo, having significant investments and operations in Israel, which activists argue supports the Israeli occupation of Palestinian territories. Key reasons include owning SodaStream, which operates in Israel, and holding a 50% stake in Sabra], a company involved in supporting Israeli economic interests.  
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 25-->
+    <div class="card" data-cat="cleaning" data-name="lrp">
+      <img src="img/larochepossay.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">la roche possay</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">La Roche-Posay is boycotted because it is owned by L'Oréal, a company that has faced criticism for long-standing business ties, investment,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pplrp" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pplrp" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">la roche possay</div>
+         <div class="description">La Roche-Posay is boycotted because it is owned by L'Oréal, a company that has faced criticism for long-standing business ties, investment, and manufacturing operations within Israel. Critics argue that these ties support the Israeli economy, leading consumers to include it on lists of brands targeted for boycotts. 
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 26-->
+    <div class="card" data-cat="food" data-name="lipton">
+      <img src="img/lipton.jfif" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">lipton</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Lipton is being boycotted as part of international campaigns protesting companies perceived to be complicit in the Israeli occupation of Palestine</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pplip" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pplip" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">lipton</div>
+         <div class="description">Lipton is being boycotted as part of international campaigns protesting companies perceived to be complicit in the Israeli occupation of Palestine and the conflict in Gaza. The brand is often targeted due to its affiliation with parent company PepsiCo, which is accused of having investments or ties to Israel.</div>
+
+      </div>
+    </div>
+
+
+    <!--produit 27-->
+    <div class="card" data-cat="cleaning" data-name="loreal">
+      <img src="img/loreal.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">l'oreal</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">L'Oréal is boycotted by pro-Palestinian activists and organizations, including the Boycott, Divestment, and Sanctions (BDS) movement, primarily due </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pplor" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pplor" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">l'oreal</div>
+         <div class="description">L'Oréal is boycotted by pro-Palestinian activists and organizations, including the Boycott, Divestment, and Sanctions (BDS) movement, primarily due to its extensive business investments and operational ties with Israel. Activists argue that these activities support Israeli policies in the occupied Palestinian territories.</div>
+
+      </div>
+    </div>
+
+    <!--produit 28-->
+    <div class="card" data-cat="cleaning" data-name="mac">
+      <img src="img/mac.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">mac</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">MAC Cosmetics is boycotted by supporters of Palestine primarily due to its parent company, Estée Lauder, and the actions of its leadership </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppmac" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppamc" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">mac</div>
+         <div class="description">MAC Cosmetics is boycotted by supporters of Palestine primarily due to its parent company, Estée Lauder, and the actions of its leadership regarding Israel. Ronald Lauder, a key leader of the company, is associated with groups supporting Israeli settlements and has been described as having close ties to Israeli political causes.
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 29-->
+    <div class="card" data-cat="clothing" data-name="louisvitton">
+      <img src="img/louisvitton.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">louis vitton</p>
+        <p class="text-cat">Clothing</p>
+        <p class="text-body">Louis Vuitton faces boycott calls due to alleged investments by its parent company, LVMH, in Israeli security and tech firms,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pplv" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pplv" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">louis vitton</div>
+         <div class="description">Louis Vuitton faces boycott calls due to alleged investments by its parent company, LVMH, in Israeli security and tech firms, alongside controversies over products perceived as either exploiting Palestinian solidarity or, conversely, supporting anti-Israel sentiment. Concerns include a $820 t-shirt with watermelon-colored branding and a 2021 keffiyeh-inspired scarf.
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 30-->
+    <div class="card" data-cat="food" data-name="mars">
+      <img src="img/mars.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">mars</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Mars, Incorporated is targeted for boycotts because it invests in Israeli foodtech startups via venture capital partners like JVC,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppma" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppma" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">mars</div>
+         <div class="description">Mars, Incorporated is targeted for boycotts because it invests in Israeli foodtech startups via venture capital partners like JVC, complicit with the Israeli occupation. These investments are seen as funding the economy behind the ongoing occupation. The boycott aims to pressure the company to cut ties with Israel. </div>
+
+      </div>
+    </div>
+    <!--produit 31-->
+    <div class="card" data-cat="finance" data-name="mastercard">
+      <img src="img/mastercard.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">mastercard</p>
+        <p class="text-cat">finance</p>
+        <p class="text-body">Mastercard is boycotted by supporters of Palestine due to its perceived support for Israel's economy and military operations,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppmc" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppmc" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">mastercard</div>
+         <div class="description">Mastercard is boycotted by supporters of Palestine due to its perceived support for Israel's economy and military operations, especially during the war in Gaza, making it a target for protesters seeking to cut financial ties with Israel. It is seen as a Western entity aiding in the facilitation of economic activities that underpin the Israeli occupation.</div>
+
+      </div>
+    </div>
+
+    <!--produit 32-->
+    <div class="card" data-cat="media" data-name="meta">
+      <img src="img/meta.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">meta</p>
+        <p class="text-cat">media</p>
+        <p class="text-body">Meta is being boycotted, particularly by users in Palestine and their supporters, due to persistent allegations of systematic censorship,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppme" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppme" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">media</div>
+         <div class="description">Microsoft is facing boycott calls, primarily spearheaded by the Boycott, Divestment, Sanctions (BDS) movement and activist groups,</div>
+      </div>
+    </div>
+
+    <!--produit 33-->
+    <div class="card" data-cat="tech" data-name="microsoft">
+      <img src="img/micro.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">microsoft</p>
+        <p class="text-cat">tech</p>
+        <p class="text-body">Microsoft is facing boycott calls, primarily spearheaded by the Boycott, Divestment, Sanctions (BDS) movement and activist groups,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppmi" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppmi" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">microsoft</div>
+         <div class="description">Microsoft is facing boycott calls, primarily spearheaded by the Boycott, Divestment, Sanctions (BDS) movement and activist groups, due to its deep, ongoing technological and financial partnerships with the Israeli military and government
+         </div>
+
+      </div>
+    </div>
+
+
+    <!--produit 34-->
+    <div class="card" data-cat="media" data-name="netflix">
+      <img src="img/netflix.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">netflix</p>
+        <p class="text-cat">media</p>
+        <p class="text-body">Netflix is facing calls for a boycott (notably by CodePink) primarily for removing a large collection of Palestinian films in October 2024, which critics label ,</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppnet" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppnet" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">netflix</div>
+         <div class="description">Netflix is facing calls for a boycott (notably by CodePink) primarily for removing a large collection of Palestinian films in October 2024, which critics label as the "erasure" of Palestinian stories. While Netflix cited the expiration of three-year licensing deals for the removal of about 19-32 films, many viewed this as an act of cultural censorship during the conflict</div>
+
+      </div>
+    </div>
+
+
+    <!--produit 35-->
+    <div class="card" data-cat="food" data-name="Nestle">
+      <img src="img/nestle.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">nestle</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Nestlé is boycotted due to its investments in Israel, specifically owning a majority stake in Osem, an Israeli food manufacturer </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppnes" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppnes" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">nestle</div>
+         <div class="description">Nestlé is boycotted due to its investments in Israel, specifically owning a majority stake in Osem, an Israeli food manufacturer that operates factories in illegal occupied Palestinian territories. This investment, including over $10 million in local factories, is viewed as complicity in supporting the Israeli economy and occupation
+
+         </div>
+
+      </div>
+    </div>
+
+    
+    <!--produit 36-->
+    <div class="card" data-cat="media" data-name="nyt">
+      <img src="img/new york times.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">new york times</p>
+        <p class="text-cat">media</p>
+        <p class="text-body">he New York Times (NYT) is currently being boycotted by a coalition of writers, activists, and readers—including groups like "Writers Against the War on Gaza" </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppnyt" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppnyt" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">new york times</div>
+         <div class="description">The New York Times (NYT) is currently being boycotted by a coalition of writers, activists, and readers—including groups like "Writers Against the War on Gaza" (WAWOG)—due to allegations of severe, systemic pro-Israel bias in its coverage of the Israeli-Palestinian conflict, particularly regarding the war in Gaza
+         </div>
+
+      </div>
+    </div>
+
+    
+    <!--produit 37-->
+    <div class="card" data-cat="clothing" data-name="Nike">
+      <img src="img/nike.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">nike</p>
+        <p class="text-cat">clothing</p>
+        <p class="text-body">Nike faces boycotts and criticism from pro-Palestinian activists primarily over alleged complicity in the Israeli occupation of Palestine </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppnike" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppnike" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">nike</div>
+         <div class="description">Nike faces boycotts and criticism from pro-Palestinian activists primarily over alleged complicity in the Israeli occupation of Palestine. Key issues include Nike’s sourcing from firms with manufacturing operations in Israeli settlements (e.g., Delta Galil) and accusations of rejecting custom products featuring "Free Palestine" messaging
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 38-->
+    <div class="card" data-cat="cleaning" data-name="Nivea">
+      <img src="img/nivea.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">nivea</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Nivea is boycotted by pro-Palestinian activists because its parent company, Beiersdorf, is accused of providing financial support to Israel  </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppniv" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppniv" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">nivea</div>
+         <div class="description">Nivea is boycotted by pro-Palestinian activists because its parent company, Beiersdorf, is accused of providing financial support to Israel and operating within Israeli settlements. The BDS movement lists Beiersdorf as a target for allegedly facilitating Israel's occupation, and it was among German companies criticized for supporting Israel during recent conflicts</div>
+
+      </div>
+    </div>
+
+    <!--produit 39-->
+    <div class="card" data-cat="tech" data-name="Nvidia">
+      <img src="img/nvidia.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">nvidia</p>
+        <p class="text-cat">tech</p>
+        <p class="text-body">Nvidia is targeted by boycotts, particularly the BDS movement, due to its deep integration into Israel's tech-military sector, massive investments in Israeli AI infrastructure, </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppnvi" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppnvi" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">nvidia</div>
+         <div class="description">Nvidia is targeted by boycotts, particularly the BDS movement, due to its deep integration into Israel's tech-military sector, massive investments in Israeli AI infrastructure, and acquisition of firms providing technology used in the surveillance and targeting of Palestinians.
+
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 40-->
+    <div class="card" data-cat="food" data-name="oreo">
+      <img src="img/oreo.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">oreo</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Oreo is boycotted in connection with Palestine because its parent company, Mondelez International, is accused of investing in Israeli startups </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppor" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppor" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">oreo</div>
+         <div class="description">Oreo is boycotted in connection with Palestine because its parent company, Mondelez International, is accused of investing in Israeli startups and maintaining financial ties in Occupied Palestine. These investments, such as in Torr FoodTech, are seen by boycott campaigns as financial support for Israeli businesses
+         </div>
+
+      </div>
+    </div>
+
+    
+    
+    <!--produit 42-->
+    <div class="card" data-cat="finance" data-name="paypal">
+      <img src="img/payâl.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">paypal</p>
+        <p class="text-cat">finance</p>
+        <p class="text-body">PayPal is boycotted by activists and targeted by campaigns like #PayPal4Palestine because it denies service to Palestinians in the West Bank  </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pppp" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pppp" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">paypal</div>
+         <div class="description">PayPal is boycotted by activists and targeted by campaigns like #PayPal4Palestine because it denies service to Palestinians in the West Bank and Gaza while providing services to Israeli citizens, including those in illegal West Bank settlements. Critics label this as discrimination, arguing it stifles the Palestinian economy. </div>
+
+      </div>
+    </div>
+
+    <!--produit 43-->
+    <div class="card" data-cat="food" data-name="pepsi">
+      <img src="img/pepsi.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">pepsi</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Pepsi is being boycotted in the Middle East and globally due to its perceived ties to the United States and Israel during the Gaza conflict, </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppps" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppps" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">pepsi</div>
+         <div class="description">Pepsi is being boycotted in the Middle East and globally due to its perceived ties to the United States and Israel during the Gaza conflict, with consumers seeking to boycott Western brands that support Israel. The boycott is fueled by consumers in Muslim-majority countries targeting brands viewed as complicit in the war in Gaza, often linked to the US, a major ally of Israel
+
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 44-->
+    <div class="card" data-cat="food" data-name="president">
+      <img src="img/president.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">president</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">President brand is boycotted, particularly in parts of the Middle East, due to its association with France, </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pppr" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pppr" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">president</div>
+         <div class="description">President brand is boycotted, particularly in parts of the Middle East, due to its association with France, a country perceived as supporting Israel during the conflict in Gaza. Consumers often target French or Western brands deemed complicit in, or supportive of, Israel's policies, as part of broader grassroots boycotts.
+         </div>
+
+      </div>
+    </div>
+
+
+    <!--produit 45-->
+    <div class="card" data-cat="clothing" data-name="puma">
+      <img src="img/puma.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">puma</p>
+        <p class="text-cat">clothing</p>
+        <p class="text-body">Puma was boycotted for being the main international sponsor of the Israel Football Association (IFA) </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#pppm" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="pppm" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">puma</div>
+         <div class="description">Puma was boycotted for being the main international sponsor of the Israel Football Association (IFA), which includes teams located in illegal Israeli settlements on occupied Palestinian land. Led by the BDS Movement, the campaign highlighted Puma's complicity in sustaining Israeli settlement expansion, which is considered a war crime under international law
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 46-->
+    <div class="card" data-cat="clothing" data-name="reebok">
+      <img src="img/reebok.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">reebok</p>
+        <p class="text-cat">clothing</p>
+        <p class="text-body">Reebok is being boycotted because it signed a two-year sponsorship deal in 2025 with the Israel Football Association (IFA), </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppr" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppr" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">reebok</div>
+         <div class="description">Reebok is being boycotted because it signed a two-year sponsorship deal in 2025 with the Israel Football Association (IFA), which includes teams based in illegal Israeli settlements on occupied Palestinian land. Activists argue this makes Reebok complicit in Israel's occupation and human rights violations, prompting calls for a #BoycottReebok campaign.
+
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 47-->
+    <div class="card" data-cat="food" data-name="snickers">
+      <img src="img/sickers.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">snickers</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Snickers is boycotted in solidarity with Palestine because its parent company, Mars, Inc., is accused of investing in Israeli foodtech startups.  </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppss" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppss" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">snickers</div>
+         <div class="description">Snickers is boycotted in solidarity with Palestine because its parent company, Mars, Inc., is accused of investing in Israeli foodtech startups. The brand is frequently included on consumer boycott lists targeting corporations that allegedly support the Israeli government and its operations in occupied Palestinian territories</div>
+
+      </div>
+    </div>
+
+    <!--produit 48-->
+    <div class="card" data-cat="cleaning" data-name="sephora">
+      <img src="img/sephora.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">sephora</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Sephora is currently facing boycott calls from both sides of the Israeli-Palestinian conflict, driven by investments of its parent company, LVMH, in Israeli technology  </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppsp" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppsp" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">sephora</div>
+         <div class="description">Sephora is currently facing boycott calls from both sides of the Israeli-Palestinian conflict, driven by investments of its parent company, LVMH, in Israeli technology and its association with pro-Palestinian brand founders. Specifically, activists cite that LVMH CEO Bernard Arnault invested in an Israeli cybersecurity firm, while others call for a boycott due to Sephora's alleged scrutinizing of brands that support Palestine, such as Huda Beaut
+           </div>
+
+      </div>
+    </div>
+
+    
+    <!--produit 49-->
+    <div class="card" data-cat="cleaning" data-name="signal">
+      <img src="img/signal.jfif" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">signal</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Based on the provided search results, the boycott against Signal toothpaste is motivated by its ownership by Unilever  </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppsig" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppsig" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">signal</div>
+         <div class="description">Based on the provided search results, the boycott against Signal toothpaste is motivated by its ownership by Unilever, a multinational corporation with significant business, investment, and manufacturing operations within Israel./div>
+
+      </div>
+    </div>
+    </div>
+
+    
+    <!--produit 50-->
+    <div class="card" data-cat="food" data-name="starbucks">
+      <img src="img/starbucks.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">starbucks</p>
+        <p class="text-cat">food</p>
+        <p class="text-body">Starbucks is boycotted due to perceived support for Israel during the Gaza conflict, largely triggered by a 2023 lawsuit against its employee unio  </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppsb" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppsb" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">starbucks</div>
+         <div class="description">Starbucks is boycotted due to perceived support for Israel during the Gaza conflict, largely triggered by a 2023 lawsuit against its employee union, "Starbucks Workers United." Following the union's pro-Palestine tweet, Starbucks sued for trademark infringement, which boycotters interpreted as siding against Palestine and a union-busting tactic.</div>
+
+      </div>
+    </div>
+
+    <!--produit 51-->
+    <div class="card" data-cat="cleaning" data-name="vasline">
+      <img src="img/vasline.jfif" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">vasline</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Vaseline is boycotted because it is owned by Unilever, a parent company with significant business operations in Israel.  </p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppvas" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppvas" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">vasline</div>
+         <div class="description">Vaseline is boycotted because it is owned by Unilever, a parent company with significant business operations in Israel. Activists argue that Unilever's presence and tax contributions in Israel indirectly support Israeli state policies and the economy, leading to calls for a boycott as part of broader solidarity efforts with Palestine
+         </div>
+
+      </div>
+    </div>
+
+
+    <!--produit 52-->
+    <div class="card" data-cat="cleaning" data-name="veet">
+      <img src="img/veet.jfif" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">veet</p>
+        <p class="text-cat">Cosmetics</p>
+        <p class="text-body">Veet is often included in boycott lists supporting Palestine due to its parent company, Reckitt Benckiser, being identified as having financial or operational ties to Israel</p>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      </div>
+      <a href="#ppve" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppve" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">veet</div>
+         <div class="description">Veet is often included in boycott lists supporting Palestine due to its parent company, Reckitt Benckiser, being identified as having financial or operational ties to Israel. As part of the BDS (Boycott, Divestment, Sanctions) movement goal to pressure Israel, consumers target international brands with ties to the Israeli economy, particularly in the personal care sector.
+         </div>
+
+      </div>
+    </div>
+
+    <!--produit 53-->
+    <div class="card" data-cat="finance" data-name="visa">
+      <img src="img/visa.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">visa</p>
+        <p class="text-cat">finance</p>
+        <p class="text-body">Visa restrictions or boycotts related to Palestine arise from two primary, distinct scenarios: U.S.</div>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      <a href="#ppvisa" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppvisa" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">visa</div>
+         <div class="description">Visa restrictions or boycotts related to Palestine arise from two primary, distinct scenarios: U.S. sanctions against officials and specific travel limitations imposed on residents. The U.S. has denied/revoked visas for Palestinian Authority (PA) and Palestine Liberation Organization (PLO) officials, accusing them of failing to uphold commitments to peace and undermining peace prospects. Separately, restrictions often involve Israel limiting access to the Occupied Territories or foreign travelers linked to the Boycott, Divestment, and Sanctions (BDS) movement.</div>
+
+      </div>
+    </div>
+
+
+    <!--produit 54-->
+    <div class="card" data-cat="clothing" data-name="zara">
+      <img src="img/zara.png" alt="Product image" class="card-image" />
+      <div class="card-details">
+        <p class="text-title">zara</p>
+        <p class="text-cat">clothing</p>
+        <p class="text-body">Zara faces boycott calls, particularly led by the BDS movement, due to its perceived complicity in Israel's actions in Palestine
+        </div>
+        <div class="card-alternative">✅ <a href="#">Try instead</a></div>
+      <a href="#ppzara" class="card-button">More info</a>
+    </div>
+
+    <!-- --- Popups --- -->
+    <div id="ppzara" class="popup">
+      <div class="popup-content">
+        <a href="#" class="close-btn">&times;</a>
+        <div class="prodtitre">zara</div>
+         <div class="description">Zara faces boycott calls, particularly led by the BDS movement, due to its perceived complicity in Israel's actions in Palestine, highlighted by a 2023 marketing campaign with imagery resembling deceased Palestinians in Gaza and the 2025 opening of a major flagship store in Israel. Protesters accuse the brand of supporting Israeli policies.</div>
+
+      </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  <p id="no-results" class="hidden" style="margin-top:2rem; color:#888; text-align:center;">No products found.</p>
+</section>
   
-  <!-- produit a boycotter  carte-->
+
+
+
+
+
+
+
+<!-- produit a boycotter  carte-->
 </section>
 
 <!-- ALTERNATIVES -->
@@ -79,6 +1344,29 @@ function showPage(page) {
   document.getElementById(page).classList.remove("hidden");
 }
 
+function applyFilters() {
+  const selectedCat = document.querySelector('.filter input:checked').id.replace('cat-', '');
+  const query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+  const cards = document.querySelectorAll('#cardsContainer .card');
+  let visible = 0;
+
+  cards.forEach(card => {
+    const matchCat = selectedCat === 'all' || card.dataset.cat === selectedCat;
+    const nameText = (card.dataset.name || '').toLowerCase();
+    const bodyText = card.querySelector('.text-body') ? card.querySelector('.text-body').textContent.toLowerCase() : '';
+    const titleText = card.querySelector('.text-title') ? card.querySelector('.text-title').textContent.toLowerCase() : '';
+    const matchSearch = !query || nameText.includes(query) || bodyText.includes(query) || titleText.includes(query);
+
+    card.style.display = (matchCat && matchSearch) ? '' : 'none';
+    if (matchCat && matchSearch) visible++;
+  });
+
+  document.getElementById('no-results').classList.toggle('hidden', visible > 0);
+}
+// connects the radio buttons to applyFilters
+document.querySelectorAll('.filter input[type="radio"]').forEach(radio => {
+  radio.addEventListener('change', applyFilters);
+});
 
 </script>
 
